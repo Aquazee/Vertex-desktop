@@ -1,0 +1,11 @@
+{
+  "name": "vertex-funds-desktop-app",
+  "version": "1.0.0",
+  "description": "Trading platform Powered by Gen AI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
