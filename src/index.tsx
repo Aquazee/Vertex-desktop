@@ -1,6 +1,7 @@
 import './styles/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Chart } from 'react-google-charts';
 
 import React from 'react';
 import { createRoot } from 'react-dom/client';
@@ -25,6 +26,17 @@ import { ErrorBoundary } from '@components/ErrorBoundary';
                         <div> HOME PAGE </div>
                         <Button color="danger">Danger!</Button>
                         <Spinner size="sm">Loading...</Spinner>
+                        <Chart
+                            chartType="ScatterChart"
+                            data={[
+                                ['Age', 'Weight'],
+                                [4, 5.5],
+                                [8, 12],
+                            ]}
+                            width="100%"
+                            height="400px"
+                            legendToggle
+                        />
 
                         <p>
                             <i className="bi bi-arrow-down-up"></i>
